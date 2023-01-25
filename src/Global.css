@@ -1,0 +1,48 @@
+.Heading {
+    background-color: yellow;
+    color:black;
+    margin:0;
+    padding:100px 0;
+    text-align:center;
+}
+
+body {
+    margin:0
+}
+
+.LoginForm, .Translations {
+    padding:30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.Translations {
+    font-size: 1.5rem;
+}
+
+input {
+    width: 30vw;
+    padding:10px 20px;
+    border-radius: 10px;
+}
+
+.TranslateLink,.Logout {
+    color:white;
+    cursor: pointer;
+    margin:0;
+    padding: 20px;
+    background-color: blue;
+}
+
+.TranslateButton {
+    background-color: yellow;
+    display: flex;
+    justify-content: space-between;
+    padding:20px;
+}
+
+.LastTranslations {
+    margin:0;
+}
