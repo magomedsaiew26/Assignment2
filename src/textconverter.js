@@ -25,8 +25,6 @@ import letterX from "./LostInTranslation_Resources/individial_signs/x.png"
 import letterY from "./LostInTranslation_Resources/individial_signs/y.png"
 import letterZ from "./LostInTranslation_Resources/individial_signs/z.png"
 
-
-
 const dataset = {
 a:
     letterA,

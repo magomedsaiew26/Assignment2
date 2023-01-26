@@ -32,8 +32,7 @@ await fetch(`${apiURL}/translations/${userId}`, {
     })
   }
   function handleClick(){
-   console.log(location.state.user)
-    navigate("/profile", {state: {name: location.state.user.username}})
+  navigate(-1)
   }
   return (
     <>

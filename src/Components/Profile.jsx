@@ -1,7 +1,4 @@
 import { useLocation, useNavigate } from "react-router-dom";
-import ProfileTranslationHistory from "../Profile/ProfileTranslationHistory";
-import ProfileActions from "../Profile/ProfileActions";
-import ProfileHeader from "../Profile/ProfileHeader";
 import { useEffect } from "react";
 import { useState } from "react";
 import "../Global.css"
@@ -12,6 +9,7 @@ function Profile(){
     const [user, setUser] = useState({name:"", translations:[]})
     //const {user} = useUser()
     async function getUser (){
+        console.log(location.state)
         const response=await fetch("https://purring-tender-alpaca.glitch.me/translations?username=" + location.state.name) 
         const pressJSON = await response.json() 
         setUser(pressJSON[0])
@@ -25,6 +23,11 @@ function handleClick(){
 function handleLogOut(){
     navigate("/")
 }
+
+function handleClear() {
+    const name = user.username
+    setUser({name:name, translations: []})
+  }
     return(
         <>
         <div className="TranslateButton">
@@ -40,9 +43,12 @@ function handleLogOut(){
             })
         }
         </div>
+        <button className="Logout fixedButton" onClick={handleClear}>Clear</button>
         </>
         
     )
 }
 
 export default Profile;
+
+
