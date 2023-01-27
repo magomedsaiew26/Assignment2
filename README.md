@@ -2,6 +2,22 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## About the application
+
+This application allows a user to create a user, if a user is not created a user will be created. 
+This application allows a user to make translation after entering a text, the last 10 translations will be showed in a profile
+page. There will also be a option to clear the applications and also log out from the application. 
+
+## Installation guide
+
+copy this URL
+https://github.com/magomedsaiew26/Assignment2.git
+Enter the below commands
+
+git clone https://github.com/magomedsaiew26/Assignment2.git
+
+npm install
+
 ## Available Scripts
 
 In the project directory, you can run:

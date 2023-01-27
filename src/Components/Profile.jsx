@@ -2,6 +2,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import { useState } from "react";
 import "../Global.css"
+// Here is profile page and making API request to get data about a user
 
 function Profile(){
     const navigate = useNavigate()

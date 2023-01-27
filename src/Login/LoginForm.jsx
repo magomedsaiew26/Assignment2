@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom"
 import "../Global.css"
 
+// Making function for LoginForm and this containts a get API to retriew a data for a user, POST API to create a new user
 function LoginForm(){
     const navigate=useNavigate()
 

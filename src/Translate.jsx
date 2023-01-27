@@ -1,11 +1,16 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { convertText } from "./textconverter";
+import { useContext } from "react";
+import { MyContext } from "./App";
+// This my translate components and here are making Patch API request to update data on the server
+
 function Translate() {
   const navigate=useNavigate()
   const location = useLocation()
   const [signLanguage, setsignLanguage]= useState("")
-  const [outputText, setoutputText]= useState([])
+  const value = useContext(MyContext)
+  const [outputText, setoutputText]= useState(value)
   const [translations, setTranslations] = useState(location.state.user.translations)
   function handleChange (e){ 
     setsignLanguage (e.target.value)

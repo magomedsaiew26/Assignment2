@@ -81,6 +81,7 @@ z:
 
   };
 
+ // This function accepts a text and returns an array of images for respective letters in the text.  
 export function convertText(text) {
     let urlArray = [];
     for (let i = 0; i < text.length; i++) {
@@ -88,6 +89,7 @@ export function convertText(text) {
         urlArray.push(dataset[text[i].toLowerCase()]);
       }
       else {
+        // This one will add a empty image to array if there other than alfphaets. 
         urlArray.push ("https://wallpapercave.com/wp/wp7632525.jpg")
       }
 
